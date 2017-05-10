@@ -32,7 +32,7 @@
                         <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                     </h:outputText>
                     <h:outputText value="#{bundle.ViewInventoryhelperLabel_userid}"/>
-                    <h:outputText value="#{inventoryhelperController.selected.userid}" title="#{bundle.ViewInventoryhelperTitle_userid}"/>
+                    <h:outputText value="#{inventoryhelperController.selected.userid.login}" title="#{bundle.ViewInventoryhelperTitle_userid}"/>
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{inventoryhelperController.destroyAndView}" value="#{bundle.ViewInventoryhelperDestroyLink}"/>

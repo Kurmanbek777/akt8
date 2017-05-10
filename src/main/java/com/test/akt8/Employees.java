@@ -135,6 +135,7 @@ public class Employees implements Serializable {
     }
 
     public Date getCreatedat() {
+        Date createdat= new Date();
         return createdat;
     }
 
@@ -143,6 +144,7 @@ public class Employees implements Serializable {
     }
 
     public Date getUpdatedat() {
+        Date updatedat= new Date();
         return updatedat;
     }
 

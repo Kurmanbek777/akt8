@@ -4,6 +4,7 @@ import com.test.akt8.util.JsfUtil;
 import com.test.akt8.util.PaginationHelper;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.ResourceBundle;
 import javax.ejb.EJB;
 import javax.inject.Named;
@@ -79,6 +80,7 @@ public class OfficesController implements Serializable {
 
     public String create() {
         try {
+            //current.setCreatedat(new String());
             getFacade().create(current);
             JsfUtil.addSuccessMessage(ResourceBundle.getBundle("/Bundle").getString("OfficesCreated"));
             return prepareCreate();

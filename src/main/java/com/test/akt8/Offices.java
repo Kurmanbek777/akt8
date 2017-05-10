@@ -6,8 +6,11 @@
 package com.test.akt8;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
+import java.util.Calendar;
+import static java.util.concurrent.ThreadLocalRandom.current;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -100,18 +103,42 @@ public class Offices implements Serializable {
         this.officename = officename;
     }
 
-    public Date getCreatedat() {
-        return createdat;
-    }
+   // public String getCreatedat(){
+     //   SimpleDateFormat createdat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss") ;
+       // Date current = new Date();
+       // return  createdat == null ? "" : new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(current);
+       
+        //return createdat.format(current);
+//}
+
+    
+    
+       public Date getCreatedat(){
+        Date createdat = new java.util.Date();
+       // return  createdat == null ? "" : new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(current);
+       
+      return createdat;
+}
+
 
     public void setCreatedat(Date createdat) {
+        
         this.createdat = createdat;
     }
 
-    public Date getUpdatedat() {
-        return updatedat;
-    }
+  // public String getUpdatedat() {
+    //   SimpleDateFormat updatedat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss") ;
+      //  Date current = new Date();
+    //    //return updatedat == null ? "" : new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(current);
+      // return updatedat.format(current);
+    //}
 
+      public Date getUpdatedat(){
+        Date updatedat = new java.util.Date();
+       // return  createdat == null ? "" : new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(current);
+       
+        return updatedat;
+}
     public void setUpdatedat(Date updatedat) {
         this.updatedat = updatedat;
     }

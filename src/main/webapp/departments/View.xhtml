@@ -28,9 +28,9 @@
                         <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                     </h:outputText>
                     <h:outputText value="#{bundle.ViewDepartmentsLabel_officeid}"/>
-                    <h:outputText value="#{departmentsController.selected.officeid}" title="#{bundle.ViewDepartmentsTitle_officeid}"/>
+                    <h:outputText value="#{departmentsController.selected.officeid.officename}" title="#{bundle.ViewDepartmentsTitle_officeid}"/>
                     <h:outputText value="#{bundle.ViewDepartmentsLabel_userid}"/>
-                    <h:outputText value="#{departmentsController.selected.userid}" title="#{bundle.ViewDepartmentsTitle_userid}"/>
+                    <h:outputText value="#{departmentsController.selected.userid.login}" title="#{bundle.ViewDepartmentsTitle_userid}"/>
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{departmentsController.destroyAndView}" value="#{bundle.ViewDepartmentsDestroyLink}"/>

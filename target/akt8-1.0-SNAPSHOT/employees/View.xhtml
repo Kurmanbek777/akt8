@@ -32,9 +32,9 @@
                         <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                     </h:outputText>
                     <h:outputText value="#{bundle.ViewEmployeesLabel_departmentid}"/>
-                    <h:outputText value="#{employeesController.selected.departmentid}" title="#{bundle.ViewEmployeesTitle_departmentid}"/>
+                    <h:outputText value="#{employeesController.selected.departmentid.departmentname}" title="#{bundle.ViewEmployeesTitle_departmentid}"/>
                     <h:outputText value="#{bundle.ViewEmployeesLabel_userid}"/>
-                    <h:outputText value="#{employeesController.selected.userid}" title="#{bundle.ViewEmployeesTitle_userid}"/>
+                    <h:outputText value="#{employeesController.selected.userid.login}" title="#{bundle.ViewEmployeesTitle_userid}"/>
                 </h:panelGrid>
                 <br />
                 <h:commandLink action="#{employeesController.destroyAndView}" value="#{bundle.ViewEmployeesDestroyLink}"/>
