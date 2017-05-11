@@ -8,17 +8,17 @@
 <h:body>
 	<h:form>
 		<h3>JSF Login Logout</h3>
-		<h:outputText value="Username" />
-		<h:inputText id="username" value="#{login.user}"></h:inputText>
-		<h:message for="username"></h:message>
+		<h:outputText value="login" />
+		<h:inputText id="login" value="#{usersController.selected.login}"></h:inputText>
+		<h:message for="login"></h:message>
 		<br /><br />
 		
-		<h:outputText value="Password" />
-		<h:inputSecret id="password" value="#{login.pwd}"></h:inputSecret>
+		<h:outputText value="password" />
+		<h:inputSecret id="password" value="#{usersController.selected.password}"></h:inputSecret>
 		<h:message for="password"></h:message>
 		<br /><br />
 		
-		<h:commandButton action="#{login.validateUsernamePassword}"
+		<h:commandButton action="#{login.validateloginpassword}"
 			value="Login"></h:commandButton>
 	</h:form>
 </h:body>
