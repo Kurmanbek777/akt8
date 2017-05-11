@@ -1,5 +1,5 @@
 package com.test.akt8;
-
+// класс преобразования сохраненной страницы в pdf
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
